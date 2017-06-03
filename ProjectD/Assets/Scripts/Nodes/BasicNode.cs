@@ -14,18 +14,19 @@ public class BasicNode : MonoBehaviour
     private int nodeId;
     private List<int> friendList;
 
-    
-    void Start(){}
-
-    void Update(){}
-
-
     public BasicNode(int nodeId, List<int> friendList)
     {
         this.nodeId = nodeId;
         this.friendList = friendList;
     }
 
+
+    void Start(){}
+
+    void Update(){}
+
+
+  
     /**
      * Adds a new connection to this node. Connecting nodes can be accessed from getNextNode.
      * @param node The BasicNode to be connected.

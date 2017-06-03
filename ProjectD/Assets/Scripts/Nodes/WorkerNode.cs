@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorkerNode : MonoBehaviour {
+public class WorkerNode : BasicNode {
 
-	// Use this for initialization
-	void Start () {
+    public WorkerNode(int nodeId, List<int> friendList) : base(nodeId, friendList)
+    {
+        
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
